@@ -1,0 +1,11 @@
+这个文件有存的p站detail页面html标签解析xpath
+解码方式是：1、先base64解码，再将里边的中文进行Unicode解码就变成了json
+json中的conf节点下就是各个站点的解析xpaht，例如
+"carpt.net": {
+			"free": ["//h1[@id='top']/b/font[@class='free']"],
+			"2xfree": ["//h1[@id='top']/b/font[@class='twoupfree']"],
+			"hr": ["//h1[@id='top']/img[@class='hitandrun']"],
+			"peer_count": ["//div[@id='peercount']/b[1]"],
+			"title":["//h1[@id='top']"],
+			"subtitle":["//h1[@id='top']/following-sibling::table[1]/tbody/tr[2]/td[2]"]
+		}
